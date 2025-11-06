@@ -1,19 +1,20 @@
-import './index.css'
-import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import HowItWorks from "./components/HowItWorks";
-import Packages from "./components/Packages";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage.jsx";
+import FAQ from "./pages/FAQs.jsx";
+import Packages from "./pages/Packages.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 
-function App() {
+const App = () => {
     return (
-        <div>
-            <Navbar />
-            <Hero />
-            <HowItWorks />
-            <Packages />
-        </div>
+        <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/packages" element={<Packages />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contact" element={<ContactUs />} />
+        </Routes>
     );
-}
+};
 
 export default App;

@@ -18,7 +18,7 @@ const steps = [
     },
 ];
 
-const HowItWorks = () => {
+const HowItWorksSection = () => {
     return (
         <section className="px-6 py-2 bg-white mb-12">
             {/* Heading */}
@@ -64,4 +64,4 @@ const HowItWorks = () => {
     );
 };
 
-export default HowItWorks;
+export default HowItWorksSection;

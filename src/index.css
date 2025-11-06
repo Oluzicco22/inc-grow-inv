@@ -1,17 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
 @import "tailwindcss";
 
 :root {
   font-family: 'Inter', sans-serif;
-  /*line-height: 1.5;*/
-  /*font-weight: 400;*/
 }
 
+/* ✅ Default: show site normally on mobile */
 body {
-  /*font-family: 'Inter', sans-serif;*/
-  place-items: center;
-  min-height: 100vh;
+  display: block;
 }
 
+/* 🚫 Hide everything on desktop (≥1024px) and show message */
+@media screen and (min-width: 1024px) {
+  /* Hide all actual site content */
+  body > * {
+    display: none !important;
+  }
+
+  /* Show the desktop-only message */
+  body::before {
+    content: "This site is only available on mobile devices.";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.25rem;
+    color: #333;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 500;
+  }
+}

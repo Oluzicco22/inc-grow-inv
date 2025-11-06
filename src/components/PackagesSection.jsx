@@ -10,7 +10,7 @@ const packages = [
     { title: "Ultimate", invest: "₦200,000", return: "₦800,000" },
 ];
 
-const Packages = () => {
+const PackagesSection = () => {
     return (
         <section className="bg-[#3A3D77] text-white py-12 px-6">
             {/* Section heading */}
@@ -52,4 +52,4 @@ const Packages = () => {
     );
 };
 
-export default Packages;
+export default PackagesSection;
