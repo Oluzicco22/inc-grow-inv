@@ -1,11 +1,11 @@
 import React from "react";
-import TopBar from "../components/Topbar.jsx";
+import Topbar from "../components/Topbar";
 
 const ContactUs = () => {
     return (
         <section className="min-h-screen bg-white px-6 py-12 text-gray-800 relative">
             {/* ✅ TopBar */}
-            <TopBar />
+            <Topbar />
 
             <h2 className="text-2xl font-bold text-center mb-8 mt-16">Contact Us</h2>
 
