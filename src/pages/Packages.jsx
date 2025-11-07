@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar";
+import TopBar from "../components/TopBar.jsx";
 import ArrowDown from "../assets/arrowDown.svg";
 
 const packages = [

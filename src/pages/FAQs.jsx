@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Topbar from "../components/Topbar"; // ✅ import Topbar
+import Topbar from "../components/TopBar.jsx"; // ✅ import Topbar
 
 const faqs = [
     {
