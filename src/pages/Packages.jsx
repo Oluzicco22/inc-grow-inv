@@ -1,5 +1,5 @@
 import React from "react";
-import TopBar from "../components/TopBar.jsx";
+import Topbar from "../components/Topbar.jsx";
 import ArrowDown from "../assets/arrowDown.svg";
 
 const packages = [
@@ -15,7 +15,7 @@ const Packages = () => {
     return (
         <section className="bg-[#3A3D77] text-white py-12 px-6 min-h-screen relative block md:hidden">
             {/* ✅ TopBar */}
-            <TopBar />
+            <Topbar />
 
             {/* Section heading */}
             <h2 className="text-3xl font-semibold mb-10 text-center leading-[64px] mt-16">
